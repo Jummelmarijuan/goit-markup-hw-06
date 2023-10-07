@@ -273,6 +273,7 @@
         </section>
 
         <!-- section 4 -->
+
         <section class="customer-section">
             <div class="customer-container container">
                 <h2 class="customer-title title">Customers</h2>
@@ -329,6 +330,8 @@
         </section>
     </main>
 
+    <!-- Footer -->
+
     <footer class="footer">
         <div class="footer-container container">
             <div>
@@ -368,8 +371,27 @@
                     </li>
                 </ul>
             </div>
+
+            <form action class="footer-email-form">
+                <div class="footer-subs-form">
+                    <h2 class="social-media-title">Subscribe</h2>
+                        <label class="footer-email">
+                            <input class="email-box" type="email" name="email" placeholder="E-mail" required>   
+                        </label>
+                </div>
+                
+                <div class="subs-btn-email">
+                    <button class="subs-btn" type="submit">Subscribe
+                        <svg class="subs-btn-icon">
+                            <use href="./icon.svg#icon-subscribe"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
+
+    <!-- Modal -->
 
     <div class="modal is-hidden" data-modal>
         <div class="modal-content">
@@ -378,6 +400,47 @@
                     <use href="./icon.svg#icon-close"></use>
                 </svg>
             </button>
+            <h2 class="modal-heading">Leave your contacts and we will call you back</h2>
+                <form class="user-contact">
+                    <label class="label-user-contact">
+                    Name
+                         <input class="user-input-box" type="text" name="Fullname" placeholder="Enter your Name">
+                        <svg class="user-contact-icon">
+                            <use href="./icon.svg#icon-name"></use>
+                        </svg>
+                    </label>
+
+                    <label class="label-user-contact">
+                    Phone
+                    <input class="user-input-box" type="text" name="phone" placeholder="Enter your Phone number" required>
+                    <svg class="user-contact-icon">
+                        <use href="./icon.svg#icon-tel"></use>
+                    </svg>
+                    </label>
+
+                    <label class="label-user-contact">
+                    Email
+                    <input class="user-input-box" type="text" name="Email" placeholder="Enter your E-mail" required>
+                    <svg class="user-contact-icon">
+                        <use href="./icon.svg#icon-email"></use>
+                    </svg>
+                    </label>
+
+                    <label class="label-user-comment">
+                    Comment
+                    <textarea class="user-comment-text-area" name="comments" rows="7" placeholder="Text Input" required></textarea>
+                    </label>
+
+                    <label class="user-privacy-policy-label">
+                        <input class="checkbox" type="checkbox" name="checked" required>
+                        <p class="privacy-policy-paragraph">
+                            I accept the terms and conditions of the&nbsp<a class="privacy-policy-link" href="#">Privacy Policy</a>
+                        </p>
+                    </label>
+                        <div class="submit-btn-box">
+                            <button class="submit-btn" type="submit">Send</button>
+                        </div>
+                </form>
         </div>
         <script src="./js/modal.js"></script>
 </body>
